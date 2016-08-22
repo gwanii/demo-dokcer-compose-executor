@@ -1,0 +1,13 @@
+{
+    "id": "docker-compose-demo",
+    "cmd": "echo hello world",
+    "cpus": 1.0,
+    "mem": 64.0,
+    "ports":[0],
+    "instances": 1,
+    "executor":"/root/demo/docker-compose-executor.sh",
+    "labels": {
+        "fileName": "sample-app/docker-compose.yml"
+    },
+  "uris":["http://192.168.99.103:8000/sample-app.tar.gz"]
+}
